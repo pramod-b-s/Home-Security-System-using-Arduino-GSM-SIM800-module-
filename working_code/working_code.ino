@@ -118,7 +118,7 @@ void SendTextMessage()
 {
   mySerial.println("AT+CMGF=1");    //To send SMS in Text Mode
   delay(1000);
-  mySerial.println("AT+CMGS=\"+919480041659\"\r"); // change to the phone number you using 
+  mySerial.println("AT+CMGS=\"+91xxxxxxxxxx\"\r"); // change to the phone number you using 
   delay(1000);
   mySerial.println("ALERT !!! Some intruder has entered your house. If it's not you, kindly call 100.");//the content of the message
   delay(200);
@@ -131,7 +131,7 @@ void SendTextMessageInit()
 {
   mySerial.println("AT+CMGF=1");    //To send SMS in Text Mode
   delay(1000);
-  mySerial.println("AT+CMGS=\"+919480041659\"\r"); // change to the phone number you using 
+  mySerial.println("AT+CMGS=\"+91xxxxxxxxxx\"\r"); // change to the phone number you using 
   delay(1000);
   mySerial.println("Burglar alarm system activated !!");//the content of the message
   delay(200);
